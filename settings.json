@@ -1,0 +1,292 @@
+{
+  "cli_default_open_behavior": "existing_window",
+  "proxy": "",
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "icon_theme": "Modern Icons (Dark)",
+  "base_keymap": "Zed",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Quiet Light",
+    "dark": "Snazzy Theme"
+  },
+  "project_panel": {
+    "dock": "left",
+    "auto_fold_dirs": false
+  },
+  "disable_ai": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "buffer_font_family": "JetBrains Mono NL",
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 15,
+    "env": {
+      "GIT_EDITOR": "zeditor --wait"
+    }
+  },
+  "tab_size": 4,
+  "show_whitespaces": "boundary",
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 500
+    }
+  },
+  "git_status": true,
+  "show_git_diff_gutter": true,
+  "file_types": {
+    "YAML": ["docker-compose.yml", "docker-compose.yaml", "**/docker-compose/*.yml"],
+    "XML": ["*.svg", "*.xsl", "*.dtd"],
+    "Python constraints": ["*constraints*.txt"],
+    "Python requirements": [
+      "**/requirements/*.{in,txt}",
+      "*requirements*.{in,txt}"
+    ],
+    "Git Attributes": ["**/{git,.git,.git/info}/attributes"],
+    "Git Config": ["*.gitconfig", "**/{git,.git,.git/modules,.git/modules/*}/config"],
+    "Git Ignore": ["**/{git,.git}/ignore", "**/.git/info/exclude"]
+  },
+  "languages": {
+    "Java": {
+      "format_on_save": "on"
+    },
+    "Go": {
+      "format_on_save": "on",
+      "formatter": {
+        "language_server": {
+          "title": "gopls"
+        }
+      }
+    },
+    "C": {
+      "format_on_save": "on"
+    },
+    "C++": {
+      "format_on_save": "on"
+    },
+    "CSharp": {
+      "format_on_save": "on"
+    },
+    "PHP": {
+      "format_on_save": "on",
+      "language_servers": ["phpantom", "emmet-language-server", "tailwindcss-language-server", "!phpactor"]
+    },
+    "SCSS": {
+      "format_on_save": "on",
+      "language_servers": ["some-sass-lsp", "!scss-lsp"],
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "Sass": {
+      "format_on_save": "on",
+      "language_servers": ["some-sass-lsp"]
+    },
+    "Python": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}"]
+        }
+      }
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "Shell Script": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": ["--filename", "{buffer_path}", "--indent", "4"]
+        }
+      }
+    },
+    "Rust": {
+      "format_on_save": "on",
+      "inlay_hints": {
+        "enabled": true
+      }
+    },
+    "TOML": {
+      "format_on_save": "on",
+      "inlay_hints": {
+        "enabled": true
+      }
+    },
+    "CSS": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "HTML": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "Vue": {
+      "format_on_save": "on",
+      "language_servers": ["vue-language-server"],
+      "formatter": {
+        "external": {
+          "command": "biome",
+          "arguments": ["format", "--stdin-file-path", "{buffer_path}"]
+        }
+      }
+    },
+    "Dockerfile": {
+      "format_on_save": "on",
+      "language_servers": ["dockerfile-language-server", "!docker-language-server"]
+    },
+    "Docker Compose": {
+      "format_on_save": "on",
+      "language_servers": ["yaml-language-server"],
+      "formatter": {
+        "external": {
+          "command": "yamlfmt",
+          "arguments": ["-in"]
+        }
+      }
+    },
+    "SQL": {
+      "format_on_save": "on",
+      "language_servers": ["postgres-language-server"],
+      "formatter": {
+        "external": {
+          "command": "sql-formatter",
+          "arguments": ["--language", "postgresql"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "vtsls": {
+          "autoUseWorkspaceTsdk": false
+        },
+        "typescript": {
+          "tsdk": "bundled"
+        }
+      }
+    },
+    "gopls": {
+      "settings": {
+        "ui.completion.usePlaceholders": true,
+        "ui.diagnostic.staticcheck": true
+      }
+    },
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--background-index",
+          "--clang-tidy",
+          "-compile-commands-dir=build"
+        ]
+      }
+    },
+    "jdtls": {
+      "settings": {
+        "java.jdt.ls.java.home": "/usr/lib/jvm/java-25-openjdk"
+      }
+    },
+    "markdownlint": {
+      "settings": {
+        "MD013": false,
+        "MD041": {
+          "level": "warning"
+        }
+      }
+    },
+    "css-variables": {
+      "initializationOptions": {
+        "handledLanguages": ["css", "html", "vue"]
+      },
+      "settings": {
+        "cssVariables": {
+          "lookupFiles": [
+            "**/*.css",
+            "**/*.html",
+            "**/*.vue"
+          ],
+          "blacklistFolders": [
+            "**/dist/**",
+            "**/node_modules/**",
+            "**/.cache/**"
+          ],
+          "undefinedVarFallback": "info"
+        }
+      }
+    }
+  },
+  "plugins": {
+    "emmet": {
+      "config": {
+        "includeLanguages": {
+          "vue": "html",
+          "scss": "css",
+          "sass": "css",
+          "less": "css"
+        }
+      }
+    }
+  },
+  "show_completions_on_input": true,
+  "autocomplete_alpha": true
+}
