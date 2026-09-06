@@ -16,12 +16,12 @@
   },
   "icon_theme": "Modern Icons (Dark)",
   "base_keymap": "Zed",
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 17,
+  "buffer_font_size": 17,
   "theme": {
     "mode": "dark",
     "light": "Quiet Light",
-    "dark": "Snazzy Theme"
+    "dark": "Siri Code"
   },
   "project_panel": {
     "dock": "left",
@@ -39,7 +39,7 @@
   "buffer_font_family": "JetBrains Mono NL",
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font",
-    "font_size": 15,
+    "font_size": 17,
     "env": {
       "GIT_EDITOR": "zeditor --wait"
     }
