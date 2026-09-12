@@ -14,14 +14,14 @@
       "enabled": true
     }
   },
-  "icon_theme": "Modern Icons (Dark)",
+  "icon_theme": "Material Icon Theme",
   "base_keymap": "Zed",
   "ui_font_size": 17,
   "buffer_font_size": 17,
   "theme": {
     "mode": "dark",
-    "light": "Quiet Light",
-    "dark": "Siri Code"
+    "light": "One Dark",
+    "dark": "Andromeda Dark"
   },
   "project_panel": {
     "dock": "left",
