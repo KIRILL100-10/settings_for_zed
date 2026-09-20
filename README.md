@@ -14,7 +14,7 @@ This configuration is tailored for developers who want a snappy, privacy-focused
 
 1. Open your Zed configuration file (via `Ctrl + ,`).
 2. Replace the contents with the `settings.json` from this repository.
-3. Make sure you have the required formatters/LSPs installed on your Manjaro system (e.g., `biome`, `ruff`, `shfmt` via `npm` or `pacman/yay`).
+3. Make sure you have the required formatters/LSPs installed on your system.
 
 ## 📄 License
 This project is licensed under the MIT License — feel free to use, modify, and distribute it!
