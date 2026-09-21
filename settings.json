@@ -205,12 +205,6 @@
     "Docker Compose": {
       "format_on_save": "on",
       "language_servers": ["yaml-language-server"],
-      "formatter": {
-        "external": {
-          "command": "yamlfmt",
-          "arguments": ["-in"]
-        }
-      }
     },
     "SQL": {
       "format_on_save": "on",
